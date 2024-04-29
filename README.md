@@ -23,14 +23,13 @@ Bem-vindo à API de Leaderboard! Esta API oferece endpoints para gerenciar usuá
 ## Nota
 - Os nomes dos movimentos com espaços devem ser substituídos por underlines (_) ao fazer a chamada API.
 
-## Como Rodar o Código
+## Como Rodar o Código (XAMPP)
 
 Para rodar o código, siga estas etapas:
 
-1. Certifique-se de ter um servidor web com PHP instalado.
-2. Clone este repositório para o diretório raiz do seu servidor.
-3. Configure um arquivo `.htaccess` para redirecionar todas as solicitações para o arquivo `index.php`.
-4. Certifique-se de ter o banco de dados configurado corretamente. Você pode encontrar o esquema do banco de dados no arquivo `database.sql`.
-5. Configure as constantes do banco de dados no arquivo `Database.php` dentro do diretório `Database`.
-6. Abra um navegador da web e acesse as rotas conforme documentado acima.
+1. Certifique-se de ter o XAMPP instalado em sua máquina. Você pode baixá-lo em https://www.apachefriends.org/index.html.
+2. Clone este repositório para o diretório htdocs do XAMPP.
+3. Certifique-se de ter o banco de dados configurado corretamente. Você pode encontrar o esquema do banco de dados no arquivo database.sql. Crie o banco no phpMyAdmin e importe este arquivo para o seu sistema de gerenciamento de banco de dados para criar as tabelas necessárias e os dados iniciais.
+4. Configure as constantes do banco de dados copiando o arquivo config.php.example para config.php dentro do diretório Database. Você pode alterar as constantes para corresponder às configurações do seu banco de dados.
+5. Após seguir esses passos, abra um navegador da web e acesse as rotas conforme documentado acima para interagir com a API. Certifique-se de iniciar o servidor Apache e MySQL no painel de controle do XAMPP antes de acessar as rotas.
 
