@@ -5,20 +5,20 @@ Bem-vindo à API de Leaderboard! Esta API oferece endpoints para gerenciar usuá
 ## Rotas Disponíveis
 
 ### Usuários
-- `GET /users/`: Retorna todos os usuários cadastrados.
-- `GET /user/get_user_by_id/{id}`: Retorna um usuário pelo ID.
-- `GET /user/get_user_by_name/{name}`: Retorna um usuário pelo nome.
+- `GET /api/users/`: Retorna todos os usuários cadastrados.
+- `GET /api/user/get_user_by_id/{id}`: Retorna um usuário pelo ID.
+- `GET /api/user/get_user_by_name/{name}`: Retorna um usuário pelo nome.
 
 ### Movimentos
-- `GET /movements/`: Retorna todos os movimentos cadastrados.
-- `GET /movement/get_movement_by_id/{id}`: Retorna um movimento pelo ID.
-- `GET /movement/get_movement_by_name/{name}`: Retorna um movimento pelo nome.
+- `GET /api/movements/`: Retorna todos os movimentos cadastrados.
+- `GET /api/movement/get_movement_by_id/{id}`: Retorna um movimento pelo ID.
+- `GET /api/movement/get_movement_by_name/{name}`: Retorna um movimento pelo nome.
 
 ### Registros Pessoais
-- `GET /records/`: Retorna todos os registros pessoais.
-- `GET /record/get_record_by_id/{id}`: Retorna um registro pessoal pelo ID.
-- `GET /record/get_rankings/`: Retorna os rankings de todos os usuários em todos os movimentos.
-- `GET /record/get_rankings_by_movement/{movement_name}`: Retorna os rankings de todos os usuários para um movimento específico.
+- `GET /api/records/`: Retorna todos os registros pessoais.
+- `GET /api/record/get_record_by_id/{id}`: Retorna um registro pessoal pelo ID.
+- `GET /api/record/get_rankings/`: Retorna os rankings de todos os usuários em todos os movimentos.
+- `GET /api/record/get_rankings_by_movement/{movement_name}`: Retorna os rankings de todos os usuários para um movimento específico.
 
 ## Nota
 - Os nomes dos movimentos com espaços devem ser substituídos por underlines (_) ao fazer a chamada API.
