@@ -29,7 +29,7 @@ Para rodar o código, siga estas etapas:
 
 1. Certifique-se de ter o XAMPP instalado em sua máquina. Você pode baixá-lo em https://www.apachefriends.org/index.html.
 2. Clone este repositório para o diretório htdocs do XAMPP.
-3. Certifique-se de ter o banco de dados configurado corretamente. Você pode encontrar o esquema do banco de dados no arquivo database.sql. Crie o banco no phpMyAdmin e importe este arquivo para o seu sistema de gerenciamento de banco de dados para criar as tabelas necessárias e os dados iniciais.
+3. Certifique-se de ter o banco de dados configurado corretamente. Você pode encontrar o esquema do banco de dados no arquivo queries.sql na raiz do projeto. Crie o banco no phpMyAdmin e importe este arquivo para o seu sistema de gerenciamento de banco de dados para criar as tabelas necessárias e os dados iniciais.
 4. Configure as constantes do banco de dados copiando o arquivo config.php.example para config.php dentro do diretório Database. Você pode alterar as constantes para corresponder às configurações do seu banco de dados.
 5. Após seguir esses passos, abra um navegador da web e acesse as rotas conforme documentado acima para interagir com a API. Certifique-se de iniciar o servidor Apache e MySQL no painel de controle do XAMPP antes de acessar as rotas.
 
