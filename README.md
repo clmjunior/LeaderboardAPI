@@ -1,8 +1,8 @@
 # API de Leaderboard
 
-Bem-vindo à API de Leaderboard! Esta API oferece endpoints para gerenciar usuários, movimentos e registros pessoais. Também inclui funcionalidades para obter rankings e registros específicos.
+Bem-vindo à API de Rankings! Esta API oferece endpoints para gerenciar usuários, movimentos e registros pessoais. Também inclui funcionalidades para obter rankings e registros específicos. Todas as respostas são retornadas em formato JSON. Este projeto foi construído utilizando os princípios de orientação a objetos, buscando sempre manter a legibilidade, manutenibilidade e baixo acoplamento entre as classes.
 
-## Rotas Disponíveis
+## Endpoints Disponíveis
 
 ### Usuários
 - `GET /api/users/`: Retorna todos os usuários cadastrados.
@@ -21,15 +21,21 @@ Bem-vindo à API de Leaderboard! Esta API oferece endpoints para gerenciar usuá
 - `GET /api/record/get_rankings_by_movement/{movement_name}`: Retorna os rankings de todos os usuários para um movimento específico.
 
 ## Nota
+- O endpoint principal em questão é: 
+
+**`GET /api/record/get_rankings_by_movement/{movement_name}`**
+
+Utilizado para retornar o ranking de um determinado movimento, trazendo o nome do movimento e uma lista ordenada com os usuários, seu respectivo recorde pessoal (maior valor), posição e data.
 - Os nomes dos movimentos com espaços devem ser substituídos por underlines (_) ao fazer a chamada API.
 
 ## Como Rodar o Código (XAMPP)
 
 Para rodar o código, siga estas etapas:
 
-1. Certifique-se de ter o XAMPP instalado em sua máquina. Você pode baixá-lo em https://www.apachefriends.org/index.html.
-2. Clone este repositório para o diretório htdocs do XAMPP.
-3. Certifique-se de ter o banco de dados configurado corretamente. Você pode encontrar o esquema do banco de dados no arquivo queries.sql na raiz do projeto. Crie o banco no phpMyAdmin e importe este arquivo para o seu sistema de gerenciamento de banco de dados para criar as tabelas necessárias e os dados iniciais.
-4. Configure as constantes do banco de dados copiando o arquivo config.php.example para config.php dentro do diretório Database. Você pode alterar as constantes para corresponder às configurações do seu banco de dados.
-5. Após seguir esses passos, abra um navegador da web e acesse as rotas conforme documentado acima para interagir com a API. Certifique-se de iniciar o servidor Apache e MySQL no painel de controle do XAMPP antes de acessar as rotas.
-
+1. Certifique-se de ter o XAMPP instalado em sua máquina. Você pode baixá-lo em [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html).
+2. Clone este repositório para o diretório htdocs do XAMPP - `git clone https://github.com/clmjunior/LeaderboardAPI.git <nome-do-diretorio-destino>`.
+3. Inicie os serviços MySQL e Apache no Painel de Controle do XAMPP.
+4. Crie o banco de dados no admin do XAMPP acessando `localhost/phpmyadmin/` no navegador.
+5. Importe o arquivo `queries.sql` localizado na raiz deste projeto para o banco criado no phpMyAdmin.
+6. Configure as constantes do banco de dados copiando o arquivo `config.php.example` para `config.php` dentro do diretório `Database`. Você deve alterar as constantes para corresponder às configurações do seu banco de dados.
+7. Após seguir esses passos, abra um navegador e acesse as rotas acessando `localhost/nome-do-diretorio-clonado/{endpoints}` conforme documentado acima para interagir com a API.
