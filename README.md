@@ -37,5 +37,5 @@ Para rodar o código, siga estas etapas:
 3. Inicie os serviços MySQL e Apache no Painel de Controle do XAMPP.
 4. Crie o banco de dados no admin do XAMPP acessando `localhost/phpmyadmin/` no navegador.
 5. Importe o arquivo `queries.sql` localizado na raiz deste projeto para o banco criado no phpMyAdmin.
-6. Configure as constantes do banco de dados copiando o arquivo `config.php.example` para `config.php` dentro do diretório `Database`. Você deve alterar as constantes para corresponder às configurações do seu banco de dados.
+6. Configure as constantes do banco de dados copiando o arquivo `config.php.example` para `config.php` dentro do diretório `src/Database`. Você deve alterar as constantes para corresponder às configurações do seu banco de dados.
 7. Após seguir esses passos, abra um navegador e acesse as rotas acessando `localhost/nome-do-diretorio-clonado/{endpoints}` conforme documentado acima para interagir com a API.
